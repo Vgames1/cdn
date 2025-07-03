@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>404 / Forbidden - tbsv CDN</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Page Not Found</title>
   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
     body {
-      background: url('https://images.unsplash.com/photo-1580281657527-47d288c66a15?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background: url('https://www.tbvs.run.place/cdn/404.png') no-repeat center center fixed;
       background-size: cover;
     }
-    .glass {
-      backdrop-filter: blur(12px);
-      background: rgba(0, 0, 0, 0.6);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
   </style>
+  <script>
+    setTimeout(() => {
+      window.location.href = '/';
+    }, 5000);
+  </script>
 </head>
-<body class="flex items-center justify-center min-h-screen text-white font-sans">
-  <div class="glass max-w-lg w-full p-10 rounded-xl text-center shadow-xl">
-    <h1 class="text-6xl font-extrabold text-red-500 mb-4">403 / 404</h1>
-    <p class="text-2xl font-semibold mb-2">Forbidden or Page Not Found</p>
-    <p class="text-gray-300 mb-6">The resource you are looking for is either missing, private, or access is denied.</p>
-    <a href="/" class="bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-5 rounded-lg transition">
-      Go Home
-    </a>
-    <footer class="mt-8 text-xs text-gray-400">
-      &copy; 2025 tbsv Vilakazi. CDN Services. All rights reserved.
-    </footer>
-  </div>
+<body>
 </body>
 </html>
